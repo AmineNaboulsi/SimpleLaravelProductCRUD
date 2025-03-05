@@ -9,6 +9,7 @@ class UserController extends Controller
 {
     //
     public function getCount(){
+        //Select COUNT(*) from Role
         $count = User::all()->count();
         return response($count);
     }

@@ -12,6 +12,7 @@ class AuthController extends Controller
      *
      */
     public function signin(Request $request){
+         //Select id from user where email = :email and password :hashedpassword
         $creadentilas = $request->validate([
             'email' => 'required|email',
             'password' => 'required'

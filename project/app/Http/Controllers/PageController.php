@@ -19,6 +19,7 @@ class PageController extends Controller
         return view("auth.login");
     }
     public function register()  {
+        //Select * from Role
         $roles = Role::all();
         return view("auth.register" , compact("roles"));
     }
